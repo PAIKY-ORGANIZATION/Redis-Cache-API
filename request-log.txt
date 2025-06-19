@@ -1,0 +1,5 @@
+6/19/2025, 10:12:38 AM - MX - /api/get-characters
+6/19/2025, 10:12:41 AM - MX - /api/get-characters
+6/19/2025, 10:12:44 AM - MX - /api/get-characters
+6/19/2025, 10:12:50 AM - MX - /api/get-characters
+6/19/2025, 10:12:51 AM - MX - /api/get-characters

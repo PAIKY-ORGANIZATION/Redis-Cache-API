@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { Request, Response } from 'express';
-import { redisClient } from '../lib/redis.js';
-import { characterKey } from '../lib/character_redis_key.js';
+import { redisClient } from '../../lib/redis.js';
+import { characterKey } from '../../lib/character_redis_key.js';
+
 
 export const getCharacters = async(_req: Request, res: Response)=>{
     

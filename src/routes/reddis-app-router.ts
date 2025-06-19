@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { validate } from "../middleware/validateBody.js";
-import { getCharacters } from "../controllers/cache-characters.js";
-import { clearCharactersCache } from "../controllers/clear-characters-cache.js";
+import { getCharacters } from "../controllers/redis-app/cache-characters.js";
+import { clearCharactersCache } from "../controllers/redis-app/clear-characters-cache.js";
 
 
 export const router = Router();

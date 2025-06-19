@@ -4,20 +4,24 @@ import './bootstrap.js'
 
 import express from 'express';
 import { errorMiddleware } from './middleware/error-middlewate.js';
-import { router } from './routes/router.js';
+
+
+import { router as usersRouter } from './routes/reddis-app-router.js';
+import { router as loggerRouter } from './routes/logger-router.js';
 import { reqLogger } from './middleware/req-logger-middleware.js';
 
 const app = express();
 app.use(express.json());
 
+//Custom middleware
 app.use(reqLogger)
 
+//Routes
+app.use('/api',  usersRouter);
+app.use('/api',  loggerRouter);
 
+//Error Middleware
+app.use(errorMiddleware) // Optional, recommended
 
-app.use('/api',  router);
-app.use(errorMiddleware)
-
-
-
-//* I exported the app for testing vitest:
+// I exported the app for testing in vitest without running the server:
 export default app

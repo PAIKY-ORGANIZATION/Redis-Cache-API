@@ -1,5 +1,23 @@
 
 
+
+
+
+type CountryApiResponse = {
+    ip: string,
+    country: string
+}
+
+
+
+
+
+
+
+
+
+//RickAndMorty API
+
 interface RickAndMortyAPIresponse {
     info:    Info;
     results: Result[];
