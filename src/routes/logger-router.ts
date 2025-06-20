@@ -10,7 +10,7 @@ import { clearRequestLogs, getRequestLogs } from "../controllers/request-logs.js
 export const router = Router();
 
 
-router.get('/getrequestlogs', validate(getRequestLogs) )
+router.get('/get-request-logs', validate(getRequestLogs) )
 
-router.delete('/clearrequestlogs', clearRequestLogs)
+router.delete('/clear-request-logs', clearRequestLogs)
 
