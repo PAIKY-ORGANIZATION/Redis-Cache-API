@@ -28,7 +28,7 @@ jobs:
             git merge origin/master
 
             sudo docker compose down
-            sudo docker compose up --build -d
+            sudo docker compose up --build --abort-on-container-exit --exit-code-from test 
 
 
 
