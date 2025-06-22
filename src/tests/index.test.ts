@@ -35,6 +35,6 @@ test('Should have cached data on request to "/api/get-characters"', async ()=>{
 test('Should clear cache on request to "/api/clear-characters-cache"', async ()=>{
     await request(app).delete('/api/clear-characters-cache').send().expect(200)
     const cachedData = await redisClient.get(characterKey)
-    // expect(cachedData).toBeNull()
-    expect(cachedData).toBe('ADASDASDASD') //¡ JUST TESITING FAILURE ON AWS ON PURPOUSE
+    expect(cachedData).toBeNull()
+    // expect(cachedData).toBe('ADASDASDASD') //¡ JUST TO  TEST FAILURE ON AWS ON PURPOSE
 })
