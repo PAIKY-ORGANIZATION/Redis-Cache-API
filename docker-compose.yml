@@ -12,7 +12,7 @@ services:
   redis:
     image: redis/redis-stack-server:latest
     ports: 
-      - "6371:6379" #! Since there will be more apps with redis, I added a last digit that will increase based on the age of the app.
+      - "63791:6379" #! Since there will be more apps with redis, I added a last digit that will increase based on the age of the app.
     
   test: 
     build: .
