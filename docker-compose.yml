@@ -14,6 +14,7 @@ services:
     ports: 
       - "63791:6379" #! Since there will be more apps with redis, I added a last digit that will increase based on the age of the app.
     
+    
   test: 
     build: .
     command: npm run test
