@@ -17,6 +17,6 @@ services:
     
   test: 
     build: .
-    command: npm run test
+    command: npm run test_docker
     depends_on:
       - redis

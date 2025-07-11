@@ -3,7 +3,7 @@ import './bootstrap.js'
 
 
 import express from 'express';
-import { errorMiddleware } from './middleware/error-middlewate.js';
+import { errorMiddleware } from 'custom-exceptions-express';
 
 
 import { router as usersRouter } from './routes/reddis-app-router.js';

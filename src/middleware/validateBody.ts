@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import { AppError, BadRequest, InternalException} from '../lib/exceptions.js';
+import { AppError, BadRequest, InternalException} from 'custom-exceptions-express';
 import { AxiosError } from 'axios';
 
 //prettier-ignore
@@ -28,11 +28,11 @@ export const validate = (controller: ControllerFunction  ) => {
 				if (status === 404) {
 					exception = new BadRequest(message);
 				} else {
-					exception = new InternalException('Axios error',status,message);
+					exception = new InternalException('Axios error', message);
 				}
 			} 
             else {
-				exception = new InternalException( 'Internal server error', 500, (e as any).message);
+				exception = new InternalException( 'Internal server error', (e as any).message);
 			}
 
 			next(exception);

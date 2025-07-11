@@ -3,3 +3,25 @@
 6/19/2025, 10:12:44 AM - MX - /api/get-characters
 6/19/2025, 10:12:50 AM - MX - /api/get-characters
 6/19/2025, 10:12:51 AM - MX - /api/get-characters
+7/11/2025, 8:45:50 AM - Unable to get country - /api/get-characters
+7/11/2025, 8:45:53 AM - Unable to get country - /api/get-characters
+7/11/2025, 8:45:55 AM - Unable to get country - /api/get-characters
+7/11/2025, 8:45:56 AM - Unable to get country - /api/get-characters
+7/11/2025, 8:46:01 AM - Unable to get country - /api/get-characters
+7/11/2025, 8:55:39 AM - Unable to get country - /api/get-characters
+7/11/2025, 8:56:23 AM - Unable to get country - /api/get-characters
+7/11/2025, 8:57:17 AM - Unable to get country - /api/get-characters
+7/11/2025, 8:57:20 AM - Unable to get country - /api/clear-characters-cache
+7/11/2025, 8:57:36 AM - Unable to get country - /api/clear-characters-cache
+7/11/2025, 9:01:11 AM - Unable to get country - /api/clear-characters-cache
+7/11/2025, 9:01:50 AM - Unable to get country - /api/get-characters
+7/11/2025, 9:07:32 AM - US - /api/get-characters - TEST
+7/11/2025, 9:07:33 AM - US - /api/clear-characters-cache - TEST
+7/11/2025, 9:08:14 AM - US - /api/get-characters - TEST
+7/11/2025, 9:08:15 AM - US - /api/clear-characters-cache - TEST
+7/11/2025, 9:09:23 AM - US - /api/get-characters - TEST
+7/11/2025, 9:09:24 AM - US - /api/clear-characters-cache - TEST
+7/11/2025, 9:09:36 AM - US - /api/get-characters - TEST
+7/11/2025, 9:09:36 AM - US - /api/clear-characters-cache - TEST
+7/11/2025, 9:09:52 AM - US - /api/get-characters - TEST
+7/11/2025, 9:09:52 AM - US - /api/clear-characters-cache - TEST

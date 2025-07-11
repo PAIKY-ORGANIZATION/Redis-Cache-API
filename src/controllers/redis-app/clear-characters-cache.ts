@@ -4,5 +4,13 @@ import { redisClient } from '../../lib/redis.js';
 
 export const clearCharactersCache = async(_req: Request, res: Response)=>{
     await redisClient.del(characterKey)
-    res.json({message: 'Cache cleared'})
+
+
+    const response: ServerResponse = {
+        message: 'Cache cleared',
+        success: true,
+        data: {}
+    }
+
+    res.json(response)
 }

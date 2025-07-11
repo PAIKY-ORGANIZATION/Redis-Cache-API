@@ -20,12 +20,21 @@ test('Should send Axios request and receive valid data', async()=>{
 
     const result = await request(app).get('/api/get-characters').send().expect(200)
 
-    expect(result.body).toEqual({
-        isCached: false,
-        durationMs: expect.any(String),
-        character: 'Morty Smith'
-    })
+    expect(result.body).toEqual(
+        
+        {
+            message: 'success',
+            success: true,
+            data: {
+                isCached: false,
+                    durationMs: expect.any(String), 
+                character: 'Morty Smith'
+            }
+        })
 })
+        
+        
+        
 
 test('Should have cached data on request to "/api/get-characters"', async ()=>{
     const cachedData = await redisClient.get(characterKey)

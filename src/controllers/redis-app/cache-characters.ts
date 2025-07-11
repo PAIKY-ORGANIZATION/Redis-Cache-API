@@ -12,12 +12,16 @@ export const getCharacters = async(_req: Request, res: Response)=>{
     const cachedData = await redisClient.get(characterKey) //A string, example: 'Morty Smith'
 
     if (cachedData) { // If the data is in cache, send it immediately and return.
-        const response = {
-            isCached: true,
-            durationMs: (Date.now() - start).toString() + 'ms', // Example: '123ms' 
-            character: cachedData
+        const response: ServerResponse = {
+            message: 'success',
+            success: true,
+            data: {
+                isCached: true,
+                durationMs: (Date.now() - start).toString() + 'ms', // Example: '123ms' 
+                character: cachedData
+            }
         }
-        res.json(response)
+        res.send(response)
         return
     }
 
@@ -31,11 +35,16 @@ export const getCharacters = async(_req: Request, res: Response)=>{
 
     await redisClient.set(characterKey, data)
 
-    const serverResponse = {
-        isCached: false,
-        durationMs: (Date.now() - start).toString() + 'ms', // Example: '123ms' 
-        character: data
+    const serverResponse: ServerResponse = {
+        message: 'success',
+        success: true,
+        data: {
+            isCached: false,
+            durationMs: (Date.now() - start).toString() + 'ms', // Example: '123ms' 
+            character: data
+        }
+
     }
 
-    res.json(serverResponse)
+    res.send(serverResponse)
 }

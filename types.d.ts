@@ -1,6 +1,15 @@
 
 
 
+type ServerResponse = {
+    message: string,
+    success: boolean
+    data?: Any
+}
+
+
+
+
 
 
 type CountryApiResponse = {
