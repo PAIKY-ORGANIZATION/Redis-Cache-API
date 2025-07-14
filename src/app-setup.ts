@@ -8,13 +8,13 @@ import { errorMiddleware } from 'custom-exceptions-express';
 
 import { router as usersRouter } from './routes/reddis-app-router.js';
 import { router as loggerRouter } from './routes/logger-router.js';
-import { reqLogger } from './middleware/req-logger-middleware.js';
+import reqLoggerExpress  from 'req-logger-express';
 
 const app = express();
 app.use(express.json());
 
 //Custom middleware
-app.use(reqLogger)
+app.use(reqLoggerExpress)
 
 //Routes
 app.use('/api',  usersRouter);
