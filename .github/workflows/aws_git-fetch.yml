@@ -37,7 +37,7 @@ jobs:
               exit $EXIT_CODE #$ This exits the ENTIRE GitHub Action with the same exit code.
             fi
             
-            sudo docker compose up --build -d backend redis
+            sudo docker compose up --build -d backend redis #$ Specify services to avoid running tests again.
 
 
             
