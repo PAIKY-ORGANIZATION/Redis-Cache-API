@@ -12,7 +12,7 @@ const setENV = ()=>{
 
 
      //* Check for required environment variables or throw stop execution.   
-    const requiredVars = ['PORT', 'REDIS_HOST', 'REDIS_PORT']
+    const requiredVars = [ 'REDIS_HOST', 'REDIS_PORT']
 
     requiredVars.forEach((varName)=>{
         if(!process.env[varName]){
