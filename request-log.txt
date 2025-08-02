@@ -25,3 +25,5 @@
 7/11/2025, 9:09:36 AM - US - /api/clear-characters-cache - TEST
 7/11/2025, 9:09:52 AM - US - /api/get-characters - TEST
 7/11/2025, 9:09:52 AM - US - /api/clear-characters-cache - TEST
+8/1/2025, 8:06:05 PM - US - /api/get-characters - TEST
+8/1/2025, 8:06:05 PM - US - /api/clear-characters-cache - TEST
